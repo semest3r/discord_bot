@@ -1,0 +1,30 @@
+@startuml
+entity User{
+    PK = INT(Primary Key)
+    --
+    username = VARCHAR(255)
+    address = VARCHAR(255)
+    total_point = INT
+}
+
+entity Add_Point{
+    PK = INT(Primary Key)
+    --
+    add_point = INT
+    created_at = TIMESTAMP
+    user_id = INT(FK)
+}
+
+entity Remove_Point{
+    PK = INT(Primary Key)
+    --
+    remove_point = INT
+    created_at = TIMESTAMP
+    user_id = INT(FK)
+}
+
+User ||--|{ Add_Point
+User ||--|{ Remove_Point
+
+
+@enduml
