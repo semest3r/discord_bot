@@ -1,4 +1,4 @@
-# SHIP WEB
+# DISCORD BOT BY DISCORD.PY
 
 ## Database Design
     check diagram.plantuml
@@ -29,8 +29,8 @@
     NAME_DB=
 
 
-## RUN UVICORN
-    bot.py
+## RUN BOT
+    py bot.py
 
 ## Additional
     Create Trigger in your database to decrease or increase 
